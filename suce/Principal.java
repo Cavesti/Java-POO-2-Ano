@@ -11,8 +11,12 @@ public static void main(String args[]){
   produto2.setNome("Doce");
   produto1.setQuantidade(100);
   produto2.setQuantidade(500);
-  produto1.setPreco(1.50);
-  produto2.setPreco(3.00);
+  produto1.setPreco(2);
+  produto2.setPreco(3);
+  
+  produto1.vender(50);
+  produto1.reajustar(50);
+  produto1.imprimir();
 
   
 }
