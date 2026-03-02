@@ -8,7 +8,7 @@ public static void main(String args[]){
   produto2= new Produto();
 
   produto1.setNome("Bala");
-  produto2.setNome("Doce";
+  produto2.setNome("Doce");
   produto1.setQuantidade(100);
   produto2.setQuantidade(500);
   produto1.setPreco(1.50);
