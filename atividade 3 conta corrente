@@ -1,0 +1,164 @@
+public class ContaCorrente{
+
+   private String nome;
+   private int numero;
+   private int agencia;
+   private double saldo;
+   private double limite;
+   
+  //construtor agora, nao tem void nem nad, so void e nome da classe 
+   public ContaCorrente(String nome, int numero, int agencia, double saldo, double limite){
+      this.nome=nome;
+      this.numero=numero;
+      this.agencia=agencia;
+      this.saldo=saldo;
+      this.limite=limite;  
+   
+   
+   } 
+   
+   public ContaCorrente(String nome, int numero, int agencia, double saldo){
+   
+   
+      this.nome=nome;
+      this.numero=numero;
+      this.agencia=agencia;
+      this.saldo=saldo;
+   
+   
+   }
+   
+   public ContaCorrente(String nome, int numero, int agencia){
+   
+      this.nome=nome;
+      this.numero=numero;
+      this.agencia=agencia;
+   
+   }
+   
+   
+   
+   
+   
+   public void setnumero(int numero){
+   
+      if(numero>0)
+         this.numero=numero;
+         
+      else System.out.println("Numero invalido");
+   
+   }
+   
+   public int getnumero(){
+   
+   return this.numero;
+   
+   }
+   public void setnome(String nome){
+      
+      this.nome=nome;
+   }
+
+
+   public String getNome(){
+   
+      return this.nome;
+   
+   }
+
+
+   public void setagencia(int agencia){
+   
+   if(agencia!= 0)
+      this.agencia=agencia;
+      
+   else System.out.println("Numero de agencia invalido");
+   
+   
+   }
+
+   public int getagencia(){
+   
+      return this.agencia;
+   
+   }
+
+
+   public void setsaldo(double saldo){
+           this.saldo=saldo; 
+   
+   
+   }
+   
+   public double getsaldo(){
+   
+   return this.saldo;
+   
+   
+   }
+
+   public void setlimite(double limite){
+   
+      this.limite=limite;
+   
+   
+   }   
+
+   public double getlimite(){
+   
+   return this.limite;
+   
+   
+   
+   }
+
+
+
+
+   public void atualizar1(double saldo, double limite  ){
+   
+   this.saldo=saldo;
+   
+   this.limite=limite;
+   
+   
+   
+   }
+
+   public void atualizar2(String nome, int numero){
+   
+   this.nome=nome;
+   this.numero=numero;
+   
+   }
+
+   public void sacar(int valor){
+   if(saldo>=valor)
+      saldo=saldo-valor;
+   else System.out.println("Nao foi possivel sacar");
+   
+   
+   }
+
+
+   public void depositar(int valor){
+      
+      if(valor>0)
+         saldo=saldo+valor;
+      else System.out.println("Nao foi possivel realizar o deposito");   
+      
+   }
+   
+   
+   public void imprimir(){
+   
+   System.out.println("Nome: "+this.nome);
+   System.out.println("Numero: "+this.numero);
+   System.out.println("Agencia "+this.agencia);
+   System.out.println("Saldo: "+this.saldo);
+   System.out.println("Limite Disponivel: "+this.limite);
+   
+   
+   }
+
+}
