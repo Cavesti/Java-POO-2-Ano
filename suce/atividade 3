@@ -1,0 +1,23 @@
+ public class Principal{
+ 
+   public static void main(String args[]){
+   
+         ContaCorrente vetor[];
+         vetor = new ContaCorrente[3];
+         vetor[0]= new ContaCorrente("Giovanni",300,50,600,1000);
+         vetor[1]= new ContaCorrente("Lanna",301,51,256);
+         vetor[2]= new ContaCorrente("Givas",302,56);
+   
+         
+         vetor[0].imprimir();
+         vetor[1].imprimir();
+         vetor[0].sacar(500);
+         vetor[0].imprimir();
+         vetor[0].depositar(400);
+         vetor[0].imprimir();
+   
+   }
+ 
+ 
+ 
+ }
