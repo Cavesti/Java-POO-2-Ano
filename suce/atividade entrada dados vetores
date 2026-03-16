@@ -1,0 +1,62 @@
+public class Vetor{
+
+
+
+public static int somar(int vetor[]){
+
+
+int soma = vetor[0];
+   for(int i=1;i<vetor.length;i++)
+      soma=soma+vetor[i];
+System.out.println("O valor da soma e: "+soma);
+      
+      return soma;
+}
+
+public static void media(int vetor[]){
+   int somatorio;
+   int media;
+   int N_elementos;
+   N_elementos=vetor.length;
+  somatorio = somar(vetor);
+  media = (somatorio/vetor.length);
+      
+   System.out.println("A media do vetor e: "+media);
+
+     
+
+}
+
+public static void imprimir(int vetor[]){
+
+int i;
+        for(i=0;i<vetor.length;i++)
+         System.out.println("O valor armanezado nesse indice do vetor e: "+vetor[i]);
+
+
+}
+
+public static int buscavalor(int vetor[], int valor){
+
+
+int valor_buscado = valor;
+int i;
+
+
+         for(i=0;i<vetor.length;i++){
+            if(vetor[i]==valor_buscado){
+               System.out.println("O valor buscado existe: "+vetor[i]);
+                  return i;}
+            
+            
+         }
+         
+return -1;
+
+}
+
+}
+
+
+
+// tudo bugado 
