@@ -1,0 +1,36 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Principal{
+
+public static void main(String args[]){
+
+Scanner scanner = new Scanner(System.in);
+
+
+int vet[]={10,5,15,1,20};
+int valor;
+int posicao=0;
+
+      Vetor.media(vet);
+      System.out.println("Digite um numero inteiro para buscar: ");
+      valor= scanner.nextInt();
+      
+      
+      Vetor.buscavalor(vet,valor);
+
+      Vetor.imprimir(vet);
+  
+  Arrays.sort(vet);
+  Vetor.imprimir(vet);
+   if(posicao>=0)
+      System.out.println("Elemento encontrado na posicao: "+posicao);
+   else System.out.println("Elemento nao encontrado");
+  
+  
+   
+
+}
+
+
+}
