@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+
+   public static void main(String args[]){
+   
+      int opcao = JOptionPane.showConfirmDialog(null,"Voce quer calcular o dobro");
+      if(opcao!=0)
+         return;
+         
+      String temp = JOptionPane.showInputDialog(null,"Digite um inteiro");
+      if(temp == null)
+         return;
+      
+      int numero = Integer.parseInt(temp);
+      JOptionPane.showMessageDialog(null,"O dobro do numero e: " + (2*numero));
+   
+   }
+
+
+
+}
